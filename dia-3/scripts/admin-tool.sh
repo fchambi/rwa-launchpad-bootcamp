@@ -19,7 +19,7 @@ stellar contract invoke \
   -- \
   initialize \
   --admin "$(stellar keys address "$ADMIN_KEY")" \
-  --asset '{"name":"RWAToken","total_supply":1000000,"price_per_unit":100,"payment_token":"'"$PAYMENT_TOKEN"'","paused":false}'
+  --asset '{"name":"RWAToken","total_supply":"1000000","price_per_unit":"100","payment_token":"'"$PAYMENT_TOKEN"'","paused":false}'
 
 echo "=== set_whitelist ==="
 stellar contract invoke \
